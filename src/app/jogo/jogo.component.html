@@ -1,0 +1,26 @@
+<form #form="ngForm" (ngSubmit)="imprimir(form)">
+
+  <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; margin-top: 150px;">
+
+    <div>
+      <img src="../../assets/Tabajara_Futebol_Clube.png" style="width: 150px;">
+      <input type="text" class="campoJogo" ngModel #golMandante="ngModel"  name="golMandante">
+    </div>
+
+    <div style="font-size: 80px; margin-left: 50px; margin-right: 50px;">
+      X
+    </div>
+
+    <div>
+      <img src="../../assets/ÍbisSC.png" style="width: 150px;">
+      <input type="text" class="campoJogo"  ngModel #golVisitante="ngModel"  name="golVisitante">
+    </div>
+
+  </div>
+
+
+  <div style="display: flex; justify-content: center; margin-top: 50px;">
+    <button style="width: 230px; height: 50px; font-size: 20px;">FINALIZAR PARTIDA</button>
+  </div>
+
+</form>

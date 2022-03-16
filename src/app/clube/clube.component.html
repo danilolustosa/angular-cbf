@@ -1,0 +1,46 @@
+
+<div style="height: 100px; border: 1px solid black; display: flex; flex-direction: row; width: 90%; margin-top: 20px; justify-content: space-between;">
+
+  <div style="display: flex; flex-direction: row;">
+    <div style="width: 120px; text-align: center;">
+      <img [src]="clube?.time?.escudo" style="height: 90%;margin-left: 15px;">
+    </div>
+
+
+
+    <div style="margin-left: 15px;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+       ">
+
+      <div style="margin-top: 10px;">
+        <span style="font-size: 15px; font-weight: bold;">{{clube?.time?.nome_popular}}</span><br>
+        <span style="font-size: 10px;">{{clube?.time?.sigla}} </span>
+      </div>
+
+      <div style="margin-bottom: 10px; display: flex; flex-direction: row;">
+        <div *ngfor="let titulo of titulos">
+          <img [src]="titulo.url"
+            style="width: 15px;">
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div style="width: 50px;
+    font-size: 30px;
+    text-align: center;
+    align-self: center;">
+    {{clube?.pontos}}
+    <span style="font-size: 15px;">pts</span>
+  </div>
+
+
+</div>
+
+

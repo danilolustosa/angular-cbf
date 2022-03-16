@@ -1,0 +1,10 @@
+.campoJogo {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-top: 20px;
+  height: 30px;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
